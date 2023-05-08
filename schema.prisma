@@ -1,0 +1,20 @@
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:Holienka1@localhost:5432/postgres"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model To_do_lists {
+  id        Int      @id @default(autoincrement())
+  owners    String[]
+  to_DOs    Json
+}
+
+model Users {
+    id        Int      @id @default(autoincrement())
+    username String
+    password String
+}

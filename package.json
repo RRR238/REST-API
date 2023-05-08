@@ -1,0 +1,25 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/jwt": "^6.7.1",
+    "@prisma/client": "^4.13.0",
+    "bcrypt": "^5.1.0",
+    "fastify": "^4.15.0",
+    "fastify-jwt": "^4.2.0",
+    "fastify-plugin": "^4.5.0",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "prisma": "^4.13.0"
+  }
+}
