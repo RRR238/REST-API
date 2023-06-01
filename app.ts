@@ -190,8 +190,7 @@ app.put<{Querystring:Iquerystring_update_flag,Body:newflag}>("/update_flag",(req
         Verify(username,password,updateFlag(listID,listName,itemNumber,newFlag,username))
 
         //verified je definovana globalne, ale jej hodnota sa meni vramci funkcie "Verify" - ak je overenie uspesne, zmeni sa na 1
-        //NA TOTO SOM NEVEDEL PRIST PRECO TO FUNGUJE VZDY AZ NA DRUHY KRAT, TEDA KED SA PRIHLASIM A ZAVOLAM ENDPOINT 1. X TAK VZDY
-        //HODNOTA VERIFIED OSTAVA 0, ALE POTOM TO UZ FUNGUJE AKO MA... 
+  
         if(verified==0){ 
             rep.send("invalid credentials")
         }else{
